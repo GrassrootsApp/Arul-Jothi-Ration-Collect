@@ -1,0 +1,190 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+@import "./theme/ionic.mixin.scss";
+
+.input-item {
+    // @include validationBorder(#57b400);
+    border-radius               :   5px; 
+    border-style                :   unset;
+    --background                :   #f6f6f6 !important;
+    border                      :   1px solid #cecece !important;
+}
+
+.input-item1 {
+    // @include validationBorder(#57b400);
+    border-radius               :   5px; 
+    border-style                :   unset;
+    --background                :   #f6f6f6 !important;
+    // border                      :   1px solid #cecece !important;
+}
+
+.input-label {
+    @include styles(padding, top, 0px);
+    --color                     :   #606060 !important;
+    @include validationTextColor(var(--color));
+}
+
+.text-color { 
+    --color                     :   #606060 !important;
+    color                       :   #606060 !important;
+}
+.theme-c {
+    color                       :   #FF9800
+}
+
+.theme-bg-color { 
+    --background                :   #FF9800 !important;       
+}
+
+.align-start { text-align       :   start !important;           }
+.align-center { text-align      :   center !important;          }
+.align-end { text-align         :   end !important;             }
+
+.align-self-center { align-self :   center !important;          }
+
+.font-bold { font-weight        :   bold !important;            }
+.font-300  { font-weight        :   300 !important;             }
+.font-400  { font-weight        :   400 !important;             }
+.font-500  { font-weight        :   500 !important;             }
+.font-600  { font-weight        :   600 !important;             }
+.font-700  { font-weight        :   700 !important;             }
+
+.mt--8 { margin-top             :   -8px !important;            }
+.mt-0  { margin-top             :   0px !important;             }
+.mt-4  { margin-top             :   4px !important;             }
+.mt-16 { margin-top             :   16px !important;            }
+.mt-3  { margin-top             :   3px !important;             }
+.mt-8  { margin-top             :   8px !important;             }
+.mt-10 { margin-top             :   10px !important;            }
+.mt-20 { margin-top             :   20px !important;            }
+.mt-24 { margin-top             :   24px !important;            }
+.mt-32 { margin-top             :   32px !important;            }
+.mt-40 { margin-top             :   40px !important;            }
+.mt-48 { margin-top             :   48px !important;            }
+.mt-60 { margin-top             :   60px !important;            }
+
+.mt-25-percent{ margin-top      :   25% !important;             }
+.mt-15-percent{ margin-top      :   15% !important;             }
+.mt-8-percent{ margin-top       :   8% !important;              }
+
+.mb-15-percent{ margin-bottom   :   15% !important;             }
+
+.mb-0  { margin-bottom          :   0px !important;             }
+.mb-4  { margin-bottom          :   4px !important;             } 
+.mb-6  { margin-bottom          :   6px !important;             } 
+.mb-8  { margin-bottom          :   8px !important;             } 
+.mb-10 { margin-bottom          :   10px !important;            }
+.mb-11 { margin-bottom          :   11px !important;            }
+.mb-16 { margin-bottom          :   16px !important;            }
+.mb-24 { margin-bottom          :   24px !important;            }
+
+.mr-0  { margin-right           :   0px !important;             }
+.mr-6  { margin-right           :   6px !important;             }
+.mr-8  { margin-right           :   8px !important;             } 
+.mr-12 { margin-right           :   12px !important;            }
+.mr-16 { margin-right           :   16px !important;            }
+.mr-24 { margin-right           :   24px !important;            }
+.mr-55 { margin-right           :   55px !important;            }
+
+.m-0   { margin                 :   0px !important;             }
+.m-8   { margin                 :   8px !important;             }
+
+.ml-0  { margin-left            :   0px !important;             }
+.ml-6  { margin-left            :   6px !important;             }
+.ml-8  { margin-left            :   8px !important;             }
+.ml-10 { margin-left            :   10px !important;            }
+.ml-16 { margin-left            :   16px !important;            } 
+.ml-50 { margin-left            :   50px !important;            }
+.ml-55 { margin-left            :   55px !important;            }
+.m-auto { margin                :   auto !important;            }
+
+.p-0   { padding                :   0px !important;             }
+
+.pt-0  { padding-top            :   0px !important;             }
+.pt-8  { padding-top            :   8px !important;             }
+.pt-16 { padding-top            :   16px !important;            }
+.pt-20 { padding-top            :   20px !important;            }
+.pt-24 { padding-top            :   24px !important;            }
+.pt-32 { padding-top            :   32px !important;            }
+
+.pb-0  { padding-bottom         :   0px !important;             }
+.pb-8  { padding-bottom         :   8px !important;             }
+.pb-10 { padding-bottom         :   10px !important;            }
+.pb-16 { padding-bottom         :   16px !important;            }
+.pb-24 { padding-bottom         :   24px !important;            }
+
+.pr-16 { padding-right          :   16px !important;            }
+
+.pl-0 { padding-left            :   0px !important;             }
+.pl-8 { padding-left            :   8px !important;             }
+.pl-16 { padding-left           :   16px !important;            }
+
+.fs-12 { font-size              :   12px !important;            }
+.fs-14 { font-size              :   14px !important;            }
+.fs-16 { font-size              :   16px !important;            }
+.fs-18 { font-size              :   18px !important;            }
+.fs-20 { font-size              :   20px !important;            }
+.fs-24 { font-size              :   24px !important;            }
+.fs-26 { font-size              :   26px !important;            }
+
+.h-24px { height                :   24px !important;            }
+.h-35px { height                :   35px !important;            }
+.h-36px { height                :   36px !important;            }
+.h-40px { height                :   40px !important;            }
+.h-45px { height                :   45px !important;            }
+.h-57px { height                :   57px !important;            }
+.h-70px { height                :   70px !important;            }
+.h-100px { height               :   100px !important;           }
+.h-140px { height               :   140px !important;           }
+.h-300px { height               :   300px !important;           }
+.w-35px { width                 :   35px !important;            }
+.w-45px { width                 :   45px !important;            }
+.w-50px { width                 :   50px !important;            }
+.w-55px { width                 :   55px !important;            }
+.w-100px { width                :   100px !important;           }
+.w-142px { width                :   142px !important;           }
+
+.ipl-0 { --padding-start        :   0px !important;             }
+.ipr-0 { --padding-end          :   0px !important;             }
+.ipt-0 { --padding-top          :   0px !important;             }
+.ipt-24 { --padding-top         :   24px !important;            }
+.ips-0 { --inner-padding-start  :   0px !important;             }
+.ipe-0 { --inner-padding-end    :   0px !important;             }
+
+.bs-card { 
+    box-shadow                  :   2px 5px 10px rgba(96, 96, 96, 0.16) !important;
+}
+
+.my-custom-modal-css1 .modal-wrapper {
+    height                      :   230px !important;
+    width                       :   345px !important;
+    // text-align                  :   center !important;
+    position                    :   absolute; 
+    display                     :   block;  
+    --border-radius             :   5px !important;
+}

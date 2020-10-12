@@ -1,0 +1,20 @@
+<ion-app>
+
+    <ion-menu side="start" autoHide='false' menuId='custom'
+        type="overlay" contentId="content">
+        <ion-content id="appPage">
+            
+            <ion-list>
+                <ion-item lines="none" button *ngFor="let item of routes"
+                    (click)="navigateTo(item.route)">
+                    <!-- <ion-icon [src]="item.icon" slot="start" class="mr-12 color-b"></ion-icon> -->
+                    <ion-label class="text-color-gray mb-0">{{item.name}}</ion-label>
+                </ion-item>
+            </ion-list>
+
+        </ion-content>
+    </ion-menu>
+                
+    <ion-router-outlet id="content" main></ion-router-outlet>
+    <!-- <ion-router-outlet></ion-router-outlet> -->
+</ion-app>

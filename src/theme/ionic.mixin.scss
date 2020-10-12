@@ -1,0 +1,36 @@
+@mixin styles($base: null, $direction: null,$value : null) {
+    @if ($direction) {
+        #{$base}-#{$direction}  :   $value !important;
+    } else {
+        $base                   :   $value !important;    
+    }
+}
+
+@mixin buttons {
+    border-radius: 4px !important;
+    box-shadow: 1px 2px 5px 1px rgba(68, 68, 68 , 0.6);
+    // height: 40px;
+}
+
+@mixin validationBorder($color) {
+    border                      :   1px solid $color !important;
+}
+
+@mixin validationTextColor($color) {
+    color                       :   $color !important;
+}
+
+@mixin iconEqualHeigthWidth($value) {
+    height                      :   $value !important;
+    width                       :   $value !important; 
+}
+
+// @import "~node_modules/ngx-chips/core/styles/core/_core.scss";
+
+// $foundation-theme: (
+//     container-border-bottom: 0px,
+// );
+
+// :ng-deep .ng2-tag-input.foundation-theme {
+//     @include tag-input-theme($foundation-theme);
+// }
